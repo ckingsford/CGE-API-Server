@@ -1,0 +1,6 @@
+export MAVEN_OPTS=-Xmx50000M
+MAVEN_OPTS="-Xmx50000M"
+
+mvn exec:java \
+-Dexec.Xms256M -Dexec.Xmx50000M \
+-Dexec.args="./properties/CGE_APIServer.properties"
